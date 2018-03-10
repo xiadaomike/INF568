@@ -1,0 +1,24 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+KeccakState	keccak_code.py	/^class KeccakState(object):$/;"	c
+RATE	keccak_code.py	/^RATE = WIDTH - CAPACITY$/;"	v
+ROUND_CONSTANTS	keccak_code.py	/^ROUND_CONSTANTS = np.array([$/;"	v
+SIZE_CONSTANT	keccak_code.py	/^SIZE_CONSTANT = 64$/;"	v
+__init__	keccak_code.py	/^    def __init__(self, orig_A):$/;"	m	class:KeccakState
+bits_to_uint64	keccak_code.py	/^    def bits_to_uint64(bits):$/;"	f	function:shake_256
+dtype	keccak_code.py	/^  dtype=np.uint64)$/;"	v
+get	keccak_code.py	/^    def get(self, x, y):$/;"	m	class:KeccakState
+get_padded_msg	keccak_code.py	/^        def get_padded_msg():$/;"	f	function:shake_256.sponge
+keccak_p	keccak_code.py	/^    def keccak_p(A):$/;"	f	function:shake_256
+log	keccak_code.py	/^from math import log$/;"	i
+np	keccak_code.py	/^import numpy as np$/;"	i
+one_round_keccak	keccak_code.py	/^    def one_round_keccak(k_state, round_idx):$/;"	f	function:shake_256
+ror	keccak_code.py	/^        def ror(val, r_bits):$/;"	f	function:shake_256.one_round_keccak
+set	keccak_code.py	/^    def set(self, x, y, val):$/;"	m	class:KeccakState
+shake_256	keccak_code.py	/^def shake_256(raw_msg, digest_len):$/;"	f
+sponge	keccak_code.py	/^    def sponge(msg, digest_len):$/;"	f	function:shake_256
+uint64_to_bits	keccak_code.py	/^    def uint64_to_bits(arr):$/;"	f	function:shake_256

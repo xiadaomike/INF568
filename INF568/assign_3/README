@@ -1,0 +1,14 @@
+Code is tested with python3.6.0. Packages needed to run:
+** bitarray: https://pypi.python.org/pypi/bitarray
+** numpy
+
+Fucntion named test_edouard on line 120 shows an example of how to use the LPS
+class for encryption and decryption. The function itself first tests encryption
+and decryption by encrypting the edouard data file, decrypting the
+produced ciphertext, and then checks it gets back the original "edouard"
+plaintext. The function then uses its self-generated public and private keys for
+encryption and decryption instead of the given one. For object serialization I
+used json.
+
+**Note: the test_edouard function assumes the test vectors are under the same
+directory as the code file.

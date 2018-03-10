@@ -1,0 +1,23 @@
+Student Name: Yue TIAN
+
+1. My program that calculates shake 256 digests is wrapped around two functions.
+The first one is shake_256(raw_msg, digest_len), which takes in a raw
+binary-string message and intended digest length, and outputs a tuple of shake
+256 (hexdigest, binarydigest). The second one is shake_256_from_file(f_name,
+digest_len), which takes in a file name and digest length, calculates the
+shake-256 digest on the file content, and its outputs are in the same format as
+shake_256.
+
+LIBRARIES USED: numpy, bitarray:https://pypi.python.org/pypi/bitarray
+
+2. To find collisions, I wrote two functions, of which both take in the number
+of input bits and number of output bits as arguments. The first one,
+find_collisions_naive, attempts at finding the collisions using brute-force,
+whereas the second one, find_collisions_sqrt finds the collisions using the
+floyd-detecting algorithm discussed in class.
+
+3. Metrics:
+Average time for each 8-collision: around 0.1 sec
+Average time for each 16-collision: around 1 sec
+Average time for each 24-collision: 190+1194+34+47/4 = 1429.75 secs = 23.8 mins
+Average time for each 32-collision: 2616 secs = 43.6 mins

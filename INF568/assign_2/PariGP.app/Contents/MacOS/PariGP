@@ -1,0 +1,15 @@
+#!/bin/sh
+BASE="`dirname $0`"
+if test -n "$BASE"; then
+  ROOT="${BASE}/../Resources"
+else
+  ROOT=/Volumes/PariGP-2.9.1/PariGP.app/Contents/Resources/
+fi
+osascript <<EOS
+tell app "Terminal"
+  do script "export GPDOCDIR=${ROOT}/share/pari/doc
+    export GPHELP='${ROOT}/bin/gphelp -d -ch 4 -cb 0 -cu 2'
+    export GP_DATA_DIR=${ROOT}/share/pari
+    clear; ${ROOT}/bin/gp; exit"
+end tell
+EOS

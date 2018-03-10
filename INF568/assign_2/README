@@ -1,0 +1,17 @@
+Language: Python2, and Python3 (except the X25519 part, see the explanation
+below)
+
+For small tests on the montgomery ladder, uncomment line 65 in the code.
+For small tests on X25519, uncomment line 117 in the code. (Note: this test only
+works with PYTHON2 because of hex encoding method deprecations)
+
+The factorization program first uses the trial_division function to find small
+prime factors, and then prints out the left-over number that needs to be
+factored into large primes. For each 10 curves that the ECMTrial function uses,
+a curve index is printed once.
+
+Uncomment lines 180-185 to see that the curve parameterization works.
+
+My code seems to factor the first challenge number without any problem, yet it
+struggles with the rest challenges. To try the factorization with different
+numbers, simply modify the number on the last line.
